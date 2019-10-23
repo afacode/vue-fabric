@@ -190,7 +190,6 @@ export default {
     },
     toJson(){
       alert(JSON.stringify(this.canvas.toJSON()));
-      console.log(JSON.stringify(this.canvas.toJSON()));
     },
     toSVG(){
       console.log(this.canvas.toSVG());

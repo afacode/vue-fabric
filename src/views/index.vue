@@ -30,7 +30,7 @@
                     <img src="@/assets/icon/copy.png">
                 </span>
                 <span id="lock" class="optionElem" @click="lock()">
-                    <img :src="$store.state.fabricObj.unclock?'http://ovfllimsi.bkt.clouddn.com/lockOpen.png':'http://ovfllimsi.bkt.clouddn.com/lockClose.png'">
+                    <img :src="$store.state.fabricObj.unclock? '@/assets/icon/lockOpen.png':'@/assets/icon/lockClose.png'">
                 </span>
                 <span id="del" class="optionElem" @click="del()">
                     <img src="@/assets/icon/del.png">
@@ -60,7 +60,7 @@
                   <img src="http://ovfllimsi.bkt.clouddn.com/go-back.png">  
                 </span>
                 <span id="redo" class="optionElem" @click="redo()">
-                   <img src="http://ovfllimsi.bkt.clouddn.com/forword.jpg">
+                   <img src="@/assets/icon/forword.jpg">
                 </span>
                 <span id="canvasToImage" class="optionElem" @click="canvasToImage()">
                    <img src="http://ovfllimsi.bkt.clouddn.com/down.jpg">
@@ -92,13 +92,13 @@
                 
             </div>
            <canvas id="canvas" width='761' height='589'></canvas>
-            <img :src="item.pic" :id="item.key" class="img-prev" v-for="item in imgInstance">
+            <img :src="item.pic" :id="item.key" class="img-prev" v-for="(item, index) in imgInstance" :key="index">
       </div>
     </div>
   </div>
 </template>
 
-<style rel="stylesheet/scss" lang="scss">
+<style lang="scss">
 .container {
   overflow: hidden;
     .left-bar {

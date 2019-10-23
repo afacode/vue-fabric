@@ -7,7 +7,6 @@
     <button type="button" class="btn" ref="display"   @click="display">可见</button>
     <button type="button" class="btn" ref="hide"   @click="hide">不可见</button>
     <button type="button" class="btn" ref="flip"   @click="flip">翻转</button>
-    <!-- disabled -->
 
   </header>
   <div class="contain">

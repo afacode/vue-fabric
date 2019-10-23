@@ -82,11 +82,8 @@ export default {
   mounted() {
     this.$store.commit("setCurrentNav", "jigsaw");
     this.$store.commit("setOptionSelect", false);
-    //绘制画布
     this.updateImg();
-    //监听canvas 事件
     this.canvasDataChange();
-    //初始化的canvas对象事件绑定
     setTimeout(() => {
       this.firstBindEvent();
     }, 300);

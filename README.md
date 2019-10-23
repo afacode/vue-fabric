@@ -2,7 +2,7 @@
 拼图基于fabric.js
 
 ### 技术栈
-> `vue全家桶+axios+sass+canvas(fabric.js)+element-ui等`
+> `vue全家桶+axios+sass+canvas(fabric.js)+element-ui+七牛云等`
 
 ### 运行
 ```js
@@ -21,4 +21,4 @@ npm run build:test
 验证码，微信登陆
 
 ### 提示
-> 现在功能已经不维护了，也不接触这方面的知识了
+> 现在功能已经不维护了，也不接触这方面的知识了。项目也跑不起来了。

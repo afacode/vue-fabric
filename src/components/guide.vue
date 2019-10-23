@@ -1,6 +1,6 @@
 <template>
   <div class="m-guide" :class="$store.state.fabricObj.jigsawIsOpen ? 'open' : '' ">
-      <div class="m" v-for="(item,index) in classFliy" :class="$store.state.fabricObj.jigsawIsOpen ? 'open' : '' ">
+      <div class="m" :key="index" v-for="(item,index) in classFliy" :class="$store.state.fabricObj.jigsawIsOpen ? 'open' : '' ">
           <div class="img-box" @click="setSearchCategory(index,$event)"  :id="item.categoryId">
                <img src="@/assets/img/icon1.png">
           </div>   

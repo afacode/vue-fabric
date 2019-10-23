@@ -1,6 +1,6 @@
 <template>
 <div>
-    <ul class="imgul" v-for="single in imgData">
+    <ul class="imgul" v-for="(single, index) in imgData" :key="index">
         <li class="imgsize">
             <img :src="single.url" alt="" :data-id="single.id">
             <span @click="addImage()" :data-id="single.id">添加图片</span>
@@ -10,7 +10,6 @@
   
 </template>
 <script>
-// import axios from 'axios';
 import axios from '@/api/axios'
 export default {
   data(){
